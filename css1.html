@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Layout - Grid</title>
+    <style>
+        div{
+           /* border: 1px solid black; */
+           box-shadow: 0 0 3px #333;
+           border-radius: 5px;
+           padding: 1rem;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 300px  1fr;
+            gap: 1rem;
+        
+            margin: 1rem;
+        }
+        h1{
+            text-align:  center;
+            margin: 10;
+        }
+        #box1{
+            display: grid;
+            place-items: center;
+            
+        }
+        #box2{
+            display: grid;
+            place-items: center;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="box1">
+              <article>
+                  <h1>DJANGO</h1>
+                  <button>know more</button>
+              </article>
+        </div>
+        <div >
+            <p>Delectus esse dolore modi ea adipisci atque porro aspernatur debitis, aliquam inventore earum accusantium
+                voluptatibus obcaecati enim hic veniam fugit recusandae deserunt ad perspiciatis reprehenderit cumque.
+                Repellendus, laboriosam ullam! Porro!</p>
+        </div>
+        <div id="box2">
+            <p> <h1>HTML</h1>
+                <button>know more</button>
+        </div>
+        <div>
+            <p>Vitae accusantium non sed eaque explicabo omnis. Pariatur fugit quas rem hic culpa vero provident
+                recusandae, possimus minima qui doloribus officiis et esse? Commodi adipisci odit assumenda ratione
+                repellendus nihil!</p>
+        </div>
+        <div>
+            <p>Voluptates, explicabo alias ad similique harum rem cupiditate perferendis. Illo, id modi, officia quos
+                aliquam quis eaque nisi praesentium est consequuntur numquam amet rem? Quasi debitis eum natus
+                obcaecati. Aperiam!</p>
+        </div>
+        <div>
+            <p>Animi pariatur praesentium repellendus reiciendis quam officia alias ab suscipit corporis quod, est illo
+                consectetur ducimus aut vero nobis voluptatem quia quidem consequatur itaque vitae sequi. Possimus
+                impedit quaerat rerum!</p>
+        </div>
+    </main>
+</body>
+
+</html>
