@@ -18,7 +18,8 @@
         }
         .container{
             display: flex;
-            outline: 2px solid red;
+            justify-content: center;
+            
         }
         h1{
             font-size: 3rem;
@@ -28,52 +29,124 @@
         h1>span {
             font-weight: lighter;
         }
+        #s1{
+            background-image: url(madebackG.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .leftcol {
+            display: flex;
+            flex-direction: column ;
+            justify-content: center ;
+            align-items: center;
+            gap: 32px;
+        }
+        .leftcol div:nth-child(1){
+            display: flex;
+            gap: 1rem;
+            
+            
+            
+        }
+        .leftcol a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+
+        }
+        .leftcol img{
+            border-radius: 17%;
+            border: 20px solid white;
+        }
+        .cta {
+            font-size: 1.5rem !important;
+            padding: .5rem 3rem;
+            color: orange !important;
+            background-color: white(206, 201, 201);
+            border-radius: 5rem;
+        }
+        .intro{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(211, 204, 204);
+            gap: 2rem;
+            padding: 10rem 3rem;
+            width: 40%;
+        }
+        .intro h2{
+            font-size: 3rem;
+        }
+        
+        .intro p{
+            font-size: 2rem;
+            color: orange;
+        }
+        .members{
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .members .i1{
+            align-self: flex-start;
+            border-radius: 3rem;
+        }
+    
+        .members .i2{
+            align-self: flex-end;
+            border-radius: 3rem;
+        }
+        .c2{
+            gap: 3rem;
+        }
     </style>
 </head>
 
 <body>
     <main>
-        <section>
+        <section id="s1">
             <div class="container">
                 <div class="leftcol">
                     <div>
                         <img src="clipart1207137.png" alt="logo" height="70" width="70">
-                        <a href="#">leaf <br>
-                            village</a>
+                        <a href="#">LEAF <br>
+                            VILLAGE</a>
                     </div>
                     <h1>
-                        <span>bring the peace <br></span> in this world
+                        <span>Bring the Peace <br></span> To this World
                     </h1>
                     <div>
-                        <a class="cta" href="#"> lern more</a>
+                        <a class="cta" href="#"> LEARN MORE</a>
                     </div>
 
                 </div>
                 <div class="rightcol">
-                    <img src="klipartz.com.png" alt="tobi" height="70%" width="70%">
+                    <img src="klipartz.com.png" alt="tobi"  width="70%">
                 </div>
             </div>
         </section>
         <section>
-            <div class="container"></div>
-            <div class="leftcol">
-                <div>
+            <div class="container">
+            <div class="intro"> 
+                
                     <h2>story of village</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officia quis, explicabo ratione
                         consequuntur fugit fuga odit provident assumenda in. Impedit dolorem quas nam obcaecati ipsam
                         quaerat maiores a fugiat?</p>
                 </div>
                 
-                <div class="rightcol"></div>
-                    <img src="naruto.jpg" alt="naruto" height="400">
-                    <img src="obito.jpg" alt="obito" height="400">
+                <div class="members">
+                    <img class= "i1" src="naruto.jpg" alt="naruto" height="400">
+                    <img class= "i2" src="obito.jpg" alt="obito" height="400">
 
             </div>
-
+        </div>
         </section>
         <section>
             <div class="container">
-                <h2>our services</h2>
+                <h2>our services</h2></div>
                 <div class="services">
                     <div class="card">
                         <img src="clipart1207137.png" alt="logo" height="100">
