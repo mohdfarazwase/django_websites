@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    .boxes{
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        display: grid;
+        place-items: center;
+        font-size: 1.2rem;
+        font-family: system-ui;
+        padding: 1rem;
+
+    }
+    .fx1{
+        color: purple;
+        background-color: yellowgreen;
+        font-weight: bolder;
+        transition: 500ms ease;
+
+
+    }
+    .fx1:hover{
+        color: white;
+        background-color: #333;
+        border-radius: 50px;
+
+    }
+    .fx2{
+        background-color: rgb(56, 56, 183);
+        border: 1px solid #333;
+        color: white;
+        transform: rotate(45deg) scale(.75) ;
+        transition: 500ms ease 10ms;
+
+        
+    }
+    .fx2:hover{
+        transform: rotate(0deg) translate(25px);
+        scale: 1;
+        opacity: .5;
+    }
+    .fx3{
+        background-color: green;
+        animation: toandfro 2s infinite ease-in-out alternate;
+    }
+
+    @keyframes toandfro{
+        0%{
+            opacity: .5;
+            translate: 0px;
+        }
+        50%{
+            opacity: 1;
+            translate: 100px 100px;
+            rotate: 180deg;
+            scale: 1.2;
+        }
+        100%{
+            translate: 0px;
+            scale: 1;
+            rotate: 0deg;
+            translate: -100px ;
+            }
+        }
+</style>
+<body>
+    <section class="container">
+        <div class="boxes fx1">Lorem.</div>
+        <div class="boxes fx1">Exercitationem!</div>
+        <div class="boxes fx2">Odit!</div>
+        <div class="boxes fx2">Laborum?</div>
+        <div class="boxes fx2">Ea.</div>
+        <div class="boxes fx3">Harum.</div>
+        <div class="boxes fx3">Delectus.</div>
+        <div class="boxes fx3">Maiores?</div>
+        <div class="boxes fx3">Distinctio!</div>
+        <div class="boxes fx3">Aperiam.</div>
+    </section>
+</body>
+</html>
